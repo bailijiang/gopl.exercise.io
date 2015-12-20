@@ -31,3 +31,9 @@ func BenchmarkEcho2(b *testing.B) {
 func Echo2() {
 	strings.Join(os.Args[1:], " ")
 }
+
+// % go test -bench=.
+// PASS
+// BenchmarkEcho1-4	50000000	        28.8 ns/op
+// BenchmarkEcho2-4	300000000	         5.84 ns/op
+// ok  	github.com/mttrs/gopl.io/ch1/ex1.3	3.813s
